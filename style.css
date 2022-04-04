@@ -1,0 +1,238 @@
+@import "./css/global.css";
+
+
+.header {
+    padding: 20px 0;
+}
+
+.header__logo {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
+    user-select: none;
+}
+
+
+.paint {
+    display: grid;
+    grid-template-columns: 1fr 8%;
+    gap: 10px;   
+}
+
+.paint__content {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-right: 10px;
+    max-height: calc(100vh - 77px);
+    /* CURSOR OPTIONS */
+    cursor: url(./img/pen.png) 0 50, auto;
+}
+
+.screen-pixel {
+    width: 15px;
+    height: 15px;
+    margin: 1px;
+    background-color:#fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    user-select: none;   
+}
+
+.paint__aside {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+}
+
+.paint__aside-wrap {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap; 
+    margin-bottom: 30px;   
+}
+
+.paint__aside-item {
+    width: calc(25% - 4px);  
+    height: 32px;
+    margin: 2px;
+    margin-bottom: 5px;
+    outline: 1px solid #000;
+    outline-offset: 2px;
+}
+
+
+button {
+    padding: 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    
+}
+
+
+/* COLORS */
+#purple {  
+    background-color: #755D9A;
+}
+#pink {  
+    background-color: #FF97BB;
+}
+#blue {
+    background-color: #1976D2; 
+}
+#orange {    
+    background-color: #ff693b; 
+}
+#green {
+    background-color: #4CAF50; 
+}
+#yellow {
+    background-color: #FFEB3B; 
+}
+#red {
+    background-color: #D32F2F; 
+}
+#lilac {
+    background-color: #E040FB; 
+}
+#brown {
+    background-color: #795548; 
+}
+#black {
+    background-color: #212121; 
+}
+
+/* CURRENT COLOR */
+.current-color {
+    width: 145px;
+    height: 145px;
+    margin-top: 2px;
+    margin-bottom: 40px;
+    background-color: #212121;
+    outline: 1px solid #212121;
+    outline-offset: 2px;
+}
+
+/* ERASER */
+.eraser {
+    user-select: none;
+}
+.eraser__btn {
+    width: 70px;
+    height: 70px; 
+}
+
+.eraser__img {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* CLEAR FIELD */
+.clear {
+    margin-top: auto;
+    margin-bottom: 30px;
+}
+
+.clear__btn {
+    padding: 7px 20px;
+    width: 100%;
+    border: 1px solid #212121;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 24px;
+}
+
+/* MEDIA ====================================================== */
+@media (max-width: 1200px) {
+    .paint {
+        grid-template-columns: 1fr 10%;
+        gap: 5px;
+    }
+    .current-color {
+        width: 100px;
+        height: 100px;
+    }
+    .eraser__btn {
+        height: 50px;
+        width: 50px;
+    }
+    .paint__aside-item {
+        width: calc(25% - 4px);  
+        height: 20px;
+    }
+    .clear {
+        margin-top: auto;
+        margin-bottom: 30px;
+    }
+    .clear__btn {
+        padding: 4px 10px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 790px) {
+    .paint {
+        grid-template-columns: 1fr 10%;
+        gap: 5px;
+    }
+    .current-color {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 20px;
+    }
+    .eraser__btn {
+        height: 30px;
+        width: 30px;
+        margin-bottom: 10px;
+    }
+    .paint__aside-item {
+        width: calc(25% - 4px);  
+        height: 15px;
+    }
+    .clear {
+        margin-top: auto;
+        margin-bottom: 15px;
+    }
+    .clear__btn {
+        padding: 4px 10px;
+        font-size: 15px;
+    }
+    .paint__aside-wrap {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 560px) {
+    .paint {
+        grid-template-columns: 1fr 15%;
+        gap: 2px;
+    }
+    .current-color {
+        width: 45px;
+        height: 45px;        
+    }
+    .paint__aside-item {
+        width: calc(50% - 4px);  
+        height: 15px;   
+    }
+    .clear__btn {
+        padding: 2px 4px;
+        font-size: 12px;
+    }
+    .container-fluid {
+        padding: 10px;
+    }
+    .screen-pixel {
+        width: 10px;
+        height: 10px;
+    }
+    .header {
+        padding: 10px 0;
+    }
+    .header__logo {
+        font-size: 18px;
+    }
+    .paint__content {
+        margin-right: 5px;
+    }
+}

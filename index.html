@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painter</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <main>
+            <div class="container-fluid">
+                <header class="header">
+                    <div class="header__logo">
+                        PAINTER
+                    </div>
+                </header>
+                <div class="paint">
+                    <div class="paint__content"></div>
+                    <div class="paint__aside">
+                        <div class="current-color"></div>
+                        <div class="paint__aside-wrap">
+                            <button id="blue" class="paint__aside-item" type="button" title="Синий"></button>
+                            <button id="purple" class="paint__aside-item" type="button" title="Фиолетовый"></button>
+                            <button id="orange" class="paint__aside-item" type="button" title="Оранжевый"></button>
+                            <button id="green" class="paint__aside-item" type="button" title="Зеленый"></button>
+                            <button id="yellow" class="paint__aside-item" type="button" title="Желтый"></button>
+                            <button id="pink" class="paint__aside-item" type="button" title="Розовый"></button>
+                            <button id="brown" class="paint__aside-item" type="button" title="Коричневый"></button>
+                            <button id="black" class="paint__aside-item" type="button" title="Черный"></button>
+                            <button id="red" class="paint__aside-item" type="button" title="Красный"></button>
+                            <button id="lilac" class="paint__aside-item" type="button" title="Сиреневый"></button>
+                        </div>
+                        <div class="eraser">
+                            <button class="eraser__btn" type="button">
+                                <img class="eraser__img" src="./img/eraser.png" alt="eraser">
+                            </button>
+                        </div>
+                        <div class="clear">
+                            <button class="clear__btn" type="button">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

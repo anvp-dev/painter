@@ -1,0 +1,43 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh; 
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-fluid {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 30px;  
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100%;
+}
+
+/* padding: calc(20px + (30 - 20) * (100vw -320vw) / 1200 - 320); */
+
