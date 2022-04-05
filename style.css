@@ -131,7 +131,7 @@ button {
 /* CLEAR FIELD */
 .clear {
     margin-top: auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .clear__btn {
@@ -157,8 +157,7 @@ button {
         height: 20px;
     }
     .clear {
-        margin-top: auto;
-        margin-bottom: 30px;
+        margin-top: auto;       
     }
     .clear__btn {
         padding: 4px 10px;
@@ -182,8 +181,7 @@ button {
         height: 15px;
     }
     .clear {
-        margin-top: auto;
-        margin-bottom: 15px;
+        margin-top: auto;   
     }
     .clear__btn {
         padding: 4px 10px;

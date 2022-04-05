@@ -77,8 +77,8 @@ window.addEventListener('DOMContentLoaded', () => {
   function paintingTouch() {
     document.addEventListener('touchstart', e => {
       const target = e.target;
-
-      if (target.classList.contains('screen-pixel')) {
+      
+      if (e.changedTouches[0].target.classList.contains('screen-pixel')) {
         target.style.backgroundColor = currentColor;
       } 
     });
