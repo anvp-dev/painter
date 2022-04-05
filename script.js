@@ -73,6 +73,17 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
   painting()
+
+  function paintingTouch() {
+    document.addEventListener('touchstart', e => {
+      const target = e.target;
+
+      if (target.classList.contains('screen-pixel')) {
+        target.style.backgroundColor = currentColor;
+      } 
+    });
+  }
+  paintingTouch()
   
   eraser.addEventListener('click', () => {
     chosenColor.style.backgroundColor = '#fff';

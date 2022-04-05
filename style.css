@@ -14,8 +14,8 @@
 
 .paint {
     display: grid;
-    grid-template-columns: 1fr 8%;
-    gap: 10px;   
+    grid-template-columns: 1fr auto;
+    gap: 5px;   
 }
 
 .paint__content {
@@ -144,10 +144,6 @@ button {
 
 /* MEDIA ====================================================== */
 @media (max-width: 1200px) {
-    .paint {
-        grid-template-columns: 1fr 10%;
-        gap: 5px;
-    }
     .current-color {
         width: 100px;
         height: 100px;
@@ -171,10 +167,6 @@ button {
 }
 
 @media (max-width: 790px) {
-    .paint {
-        grid-template-columns: 1fr 10%;
-        gap: 5px;
-    }
     .current-color {
         width: 70px;
         height: 70px;
@@ -200,13 +192,12 @@ button {
     .paint__aside-wrap {
         margin-bottom: 15px;
     }
+    .header {
+        padding: 10px 0;
+    }
 }
 
 @media (max-width: 560px) {
-    .paint {
-        grid-template-columns: 1fr 15%;
-        gap: 2px;
-    }
     .current-color {
         width: 45px;
         height: 45px;        
@@ -223,8 +214,8 @@ button {
         padding: 10px;
     }
     .screen-pixel {
-        width: 10px;
-        height: 10px;
+        width: 13px;
+        height: 13px;
     }
     .header {
         padding: 10px 0;
